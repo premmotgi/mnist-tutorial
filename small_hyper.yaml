@@ -1,0 +1,18 @@
+#This is an example yaml file for mnist project
+#this hyper file will generate 15 experiments
+parameters:
+# Integer parameter is a range of possible values between a minimum (inclusive)
+# and maximum (not inclusive) values. Values are floored (0.7 => 0)
+- param_name: "epochs"
+  type: "integer"
+  min: 10 # inclusive
+  max: 50 # not inclusive
+  scale: "linear"
+  steps: 5 # The number of linear steps to produce.
+
+# Categorical parameter is an array of string values
+#
+- param_name: "batch_size"
+  type: "categorical"
+  values: ["128", "256", "512"]
+
