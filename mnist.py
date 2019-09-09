@@ -14,6 +14,8 @@ from keras.layers import Conv2D, MaxPooling2D
 from keras import backend as K
 import argparse
 
+if not os.path.exists(os.path.dirname("output/")):
+    os.makedirs(os.path.dirname("output/"))
 
 parser = argparse.ArgumentParser(description='Running MNIST Algorithm')
 parser.add_argument('--epochs', help='number of epochs to run', default='12')
