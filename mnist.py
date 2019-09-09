@@ -84,4 +84,4 @@ model.fit(x_train, y_train,
 score = model.evaluate(x_test, y_test, verbose=0)
 print('cnvrg_tag_test_loss:', score[0])
 print('cnvrg_tag_test_accuracy:', score[1])
-model.save('mnist_model.h5')
+model.save('output/mnist_model.h5')
