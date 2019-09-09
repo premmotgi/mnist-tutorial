@@ -13,6 +13,7 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 from keras import backend as K
 import argparse
+import os
 
 if not os.path.exists(os.path.dirname("output/")):
     os.makedirs(os.path.dirname("output/"))
