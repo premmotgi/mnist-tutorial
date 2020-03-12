@@ -2,7 +2,7 @@ from keras.preprocessing.image import img_to_array
 from keras.preprocessing.image import load_img
 from keras.models import load_model
  
-model = load_model('mnist_model.h5')
+model = load_model('output/mnist_model.h5')
 
 # load an image and predict the class
 def predict(file_path):
