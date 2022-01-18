@@ -1,1 +1,2 @@
-sudo apt-get install python3-h5py
+apt-get update -y
+apt-get install -y python3-h5py
