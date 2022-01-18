@@ -1,6 +1,8 @@
 from cnvrg import Endpoint
 from scipy.misc.pilutil import imread, imresize
 import numpy as np
+import tensorflow as tf
+import keras
 #perform the prediction
 from keras.models import load_model
 #include custom charts in logging
